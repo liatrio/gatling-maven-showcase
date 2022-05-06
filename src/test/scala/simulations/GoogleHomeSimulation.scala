@@ -10,4 +10,7 @@ class GoogleHomeSimulation extends Simulation  {
         atOnceUsers(1)
       ).protocols(GoogleDefaults.httpProtocols)
     )
+    .assertions(
+      global.responseTime.percentile(90).lt(200)
+    )
 }
