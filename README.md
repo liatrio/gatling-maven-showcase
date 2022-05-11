@@ -14,10 +14,11 @@ separate the suite by Gatling's core concepts:
 * Scenarios
   * Scenarios refer to different user scenario within an app or service. For example,
     add an item to a cart:
-    1. Click on shop
-    2. Click on category
-    3. Click on item
-    4. Click on add to cart
+    1. Go to webapp
+    2. Click on shop
+    3. Click on category
+    4. Click on item
+    5. Click on add to cart
   * In that `scenario`, 5 different `requests` were made. Therefore, `scenarios` are essentially
     a group of requests that form a user story.
 
