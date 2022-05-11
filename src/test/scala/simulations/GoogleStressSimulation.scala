@@ -14,6 +14,6 @@ class GoogleStressSimulation extends Simulation  {
     ).protocols(GoogleDefaults.httpProtocols)
   )
     .assertions(
-      global.responseTime.percentile(90).lt(200)
+      global.responseTime.percentile(90).lt(750)
     )
 }
