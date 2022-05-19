@@ -17,3 +17,9 @@ jobs:
     - uses: liatrio/run-gatling@v1.1.1
       with:
           testPath: ./
+
+    - name: debug
+      if: ${{ always() }}
+      run: |
+        ls -la
+        ls -la $GITHUB_WORKSPACE
