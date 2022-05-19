@@ -17,3 +17,5 @@ jobs:
     - uses: liatrio/run-gatling@v1.1.3
       with:
           testPath: ./
+
+    - run: ls -la
