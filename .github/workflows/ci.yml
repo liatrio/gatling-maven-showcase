@@ -14,7 +14,7 @@ jobs:
         os: [ 'ubuntu-latest' ]
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: liatrio/run-gatling@v1.1.1
+    - uses: liatrio/run-gatling@v1.1.2
       with:
           testPath: ./
 
