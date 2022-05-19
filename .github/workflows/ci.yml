@@ -15,14 +15,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
+    - uses: liatrio/run-gatling@fix-workspace
       with:
-        repository: liatrio/run-gatling
-        ref: v1.1.3
-
-    - uses: liatrio/run-gatling@v1.1.3
-      with:
-          testPath: ./
+          pomPath: ./
 
     - name: debug
       if: ${{ always() }}
-      run: ls -la
+      run: |
+        ls -la
